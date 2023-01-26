@@ -1,0 +1,342 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d7e1dd;
+    min-height: 100vh;
+    width: 100%;
+}
+
+span{
+font-size:  1rem;
+text-decoration: none;
+} 
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #b3bebb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: header;
+    border-bottom: 1em solid #454747;
+}
+
+.fotocarnet{
+    height: 100%;
+    margin-left: 5em;
+    scale: 1.2;
+}
+
+.nombre{
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.nombre h2{
+    margin: 0.5em auto;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.nombre h3{
+    margin: 0.5em auto;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: cursive;
+} 
+
+main{
+    display: grid;
+    gap: .1em;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas:    "barraLateral   contenedor  contenedor";
+}
+
+.barraLateral{
+    display: flex;
+    background-color: #b3bebb;
+    border-right: .2em solid #454747;
+    grid-area: barraLateral;
+}
+
+.datosPersonales{
+    justify-items: center;
+    padding: .4em;
+}
+
+.identidad, .perfil{
+    border: .2em solid #454747;
+    border-radius: .5em;
+    padding: 1em;
+    margin: 1em;
+    font-weight: bold;
+}
+
+.perfil{
+    margin-top: 30em;
+    margin-bottom: 50%;
+    font-weight: normal;
+}
+
+.identidad h2{
+    padding: .0 0 .5em;
+    text-decoration: underline;
+    
+}
+.identidad p{
+    padding: .2em 0 .2em;
+    
+}
+.contenedor{
+    grid-area: contenedor;
+}
+
+.infoCompleta{
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    border-bottom: .2em solid #44b5e2;
+}
+
+.contenedorIndividual{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    margin: 0;
+}
+
+.iconoTitulo{
+    display: inline-flex;
+    flex: 2;
+    align-items: center;
+    padding: 1em;
+    margin: .5em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.iconoTitulo a {
+    display: flex;
+    width: 10%;
+    align-items: center;
+}
+
+.iconoTitulo h2 {
+    padding-left: 2em;
+    margin-left: 2em;
+    width: 90%;
+    align-items: center;
+}
+
+.tituloAcademico{
+    border: .2em solid #454747;
+    border-radius: .5em;
+    display: inline-flex;
+    flex: 3;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tituloAcademico h2{
+    padding: 1em;
+    font-size: 1.5rem;
+}
+
+#perfil_titulo{
+    padding: .5em;
+}
+
+.listaHabilidades, .listaExperiencia{
+    display: inline-flex;
+    flex: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.habilidadesTipo, .experienciaTipo, .idiomasTipo, .listaReferencias, .listaDisponibilidad{
+    padding: .5em;
+}
+
+.habilidadesTipo h3, .experienciaTipo h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1em 0 1em 0;
+}
+.habilidadesTipo li{
+    margin-left: 1em;
+    padding: .2em;
+}
+
+.sangria{
+    margin-left: 1em;
+   
+}
+
+.items{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.items::before{
+    content: "★ ";
+}
+
+.icono{
+    width: 3em;
+    height: 3em;
+    padding: .5em;
+}
+
+#perfil_experiencia1, #perfil_experiencia2 {
+    margin-top: .5em;
+}
+
+.listaIdiomas, .listaReferencias{
+    display: inline;
+    flex: 3;
+    flex-direction: row;
+    text-align: left;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nivel{
+    color: rgb(0, 0, 0);
+    height:24px;
+    width:80%;
+    padding: .5em;
+}
+
+.referente{
+    display: inline-block;
+    align-items: center;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.listaDisponibilidad{
+    display: inline;
+    flex: 3;
+    flex-direction: row;
+    text-align: left;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.listaDisponibilidad li{
+    padding: .5em 0 .5em 0;
+}
+
+.listaPretenciones{
+    display: inline;
+    flex: 3;
+    flex-direction: row;
+    text-align: left;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.listaPretenciones li{
+    padding: .5em 0 .5em 0;
+}
+
+.habilidadesTipo li progress{
+    margin-right: 0;
+}
+
+.datosPersonales{
+    margin: 0 auto;
+}
+
+footer{
+    display: grid;
+    gap: .1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-self: start;
+    border: .2em solid #686a6b;
+    background-color: #94d0f3
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    body, header, main, footer, .contenedor, .barraLateral,.contenedorIndividual  {
+        display: block;
+        width: 100%; 
+    }
+    .fotocarnet{
+        height: 100%;
+        margin: 0 35%;
+        scale: 1.2;
+    }
+    .perfil{
+        margin-top: 1em;
+        margin-bottom: 5%;
+    }
+    .barraLateral{
+        display: block;
+        background-color: #c2eee2;
+    }
+    .iconoTitulo{
+        
+         display: flex;
+         flex: 2;
+  
+         padding: 0em;
+         margin: 0em;
+         font-size: 1.5rem;
+         font-weight: bold;
+         font-family: cursive;
+     }
+     .iconoTitulo h2 {
+        padding-left: .5em;
+        margin-left: .5em;
+        width: 90%;
+        align-items: center;
+        
+    }
+}
+
+
+
+
+
+

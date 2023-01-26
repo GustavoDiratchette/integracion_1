@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="curriculum.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Lucas Ignacio Soto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="Img/icon_fotocarnet.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <header>
+        <img src="img/fotocarnet.jpg" alt="fotocarnet"class="fotocarnet">        
+        <div class="nombre">
+            <h2>Lucas Ignacio Soto</h2>
+            <h3>Técnico Universitario en Programación Web</h3>
+        </div>                         
+    </header>
+
+    <main>
+        <div class="barraLateral">
+            <div class="datosPersonales">
+                <div class="identidad">
+                    <h2>DATOS CIVILES:</h2>
+                    <p>Edad: <script>document.write(" "+edad()+" ")</script> años</p>
+                    <p>DNI:40.111.111</p>
+                    <p>Estado Civil: Casado</p>
+                    <p>Hijos: 3</p>
+                </div>
+                <div class="perfil">
+                    <div class="iconoTitulo">
+                        <img src="img/icon_perfil.jpg" class= "icono" alt="icono perfil" >
+                        <h2>PERFIL PERSONAL</h2>
+                    </div>
+                    <p> Técnico superior informático con más de 5 años de experiencia dando soporte a usuarios y empresas en relación a servicios online. Mi sistema de trabajo metódico me ha llevado a resolver incidentes de más de 30 usuarios de forma semanal, al mismo tiempo que contribuía con el desarrollo de aplicaciones propias en colaboración con otros departamentos, cumpliendo con los plazos y objetivos establecidos en relación a la experiencia de usuario</p>
+                    <p></p>
+                </div>     
+            </div>
+        </div>
+        
+        <div class="contenedor">
+            <div class="infoCompleta">
+                <div class="contenedorIndividual">
+                    <div class="iconoTitulo">
+                        <a href="javascript:mostrar(),javascript:ocultar();" onclick="mostrar('perfil_titulo')" ondblclick="ocultar('perfil_titulo')"><img src="img/icon_formacion.jpg" class= "icono" alt="icono formación"><span> <img src="img/icon_+.jpg" alt="icono +" ></span></a>
+                        <h2>FORMACION ACADEMICA</h2>
+                    </div>
+                    <div class="tituloAcademico">
+                        <h2>Tecnicatura Universitaria en Desarrollo Web</h2>
+                        <p>Universidad Nacional de Entre Ríos - Facultad de Ciencias de la Administración</p>
+                        <p>Ingreso año 2011 - Egreso año 2014</p>
+                    </div>
+                </div>                        
+                                     
+                <div id="perfil_titulo" style="display: none;">
+                   <a href="javascript:ocultar();" onclick="ocultar('perfil_titulo')"><span> ☒</span></a>
+                    <p>El Técnico Universitario en Programación Web puede desempeñarse de manera independiente o en relación de dependencia en  cualquier tipo de organización.
+
+                        Estará orientado especialmente al mercado laboral vinculado con la interrelación entre un usuario final y el diseño y producción de aplicaciones que tiene a la Web como medio de ejecución.
+                        
+                        Contará con competencias que le permitirán ser capaz de planificar, diseñar, desarrollar e implementar aplicaciones en entornos web y con habilidades adecuadas para participar de grupos interdisciplinarios de diversas ramas de la ciencia y la tecnología para aplicar sus conocimientos como asesor técnico en el desarrollo de sistemas informáticos que utilizan la web como medio.
+                        
+                        Su formación técnica le permitirá desarrollar aplicaciones de carácter general y aplicaciones destinadas a usos específicos basadas en tecnologías internet, con las competencias necesarias para seleccionar y aplicar herramientas informáticas orientadas al desarrollo y diseño de software de aplicaciones o software como servicio.
+                        
+                        Sus conocimientos se sustentan en una sólida formación teórica y practica en programación, ingeniería de software, redes y tecnologías aplicadas al diseño y desarrollo de aplicaciones y servicios web, así como también computación móvil y ubicua.
+                    </p>   
+                </div>
+            </div>
+
+            <div class="infoCompleta">
+                <div class="contenedorIndividual">
+                    <div class="iconoTitulo">
+                        <a><img src="img/icon_habilidades.jpg" class= "icono" alt="icono habilidades"><span> </span></a>
+                        <h2>HABILIDADES</h2>
+                    </div>
+                    <div class="listaHabilidades">
+                        <div class="habilidadesTipo"><h3>Competencias esenciales</h3>
+                            <ul>
+                                <li>Conocimiento sólido en desarrollo de aplicaciones móviles  </li>  
+                                <li>Gran capacidad de aprendizaje  </li>
+                                <li>Experto en personalización de sitios web </li>
+                                <li>Conocimiento de diferentes lenguajes de programación  </li>
+                                <li>Perfil polivalente y versátil </li>
+                                <li>Solución creativa a problemas </li>
+                            </ul>
+                        </div> 
+                        <div class="habilidadesTipo"><h3>Competencias adicionales</h3></p>
+                            <ul>
+                                <li>Páginas web dinámicas  </li>  
+                                <li>Gestión de sitios web  </li>
+                                <li>Diseño de páginas web corporativas </li>
+                                <li>Capacidad de trabajo en equipo  </li>
+                                <li>Alta capacidad resolutiva </li>
+                                <li>Gran nivel de organización </li>
+                            </ul> 
+                        </div>          
+                    </div>
+                </div>     
+                <p></p>                                            
+            </div>
+              
+            <div class="infoCompleta">
+                <div class="contenedorIndividual">
+                    <div class="iconoTitulo">
+                        <a href="javascript:mostrarExperiencia(),javascript:ocultarExperiencia();" onclick="mostrar('perfil_experiencia1'), mostrar('perfil_experiencia2')" ondblclick="ocultar('perfil_experiencia1'),ocultar('perfil_experiencia2')"><img src="img/icon_experiencia.jpg" class= "icono" alt="icono experiencia"><span> <img src="img/icon_+.jpg" alt="icono +" ></span></a>
+                        <h2>EXPERIENCIA LABORAL</h2>
+                    </div>
+                    <div class="listaExperiencia">
+                        <div class="experienciaTipo"><h3>Experiencia Comprobable</h3>
+                            <ul>
+                                <li >
+                                    <p class="items">Informático en Soporte Técnico, Grupo Ticmas</p> 
+                                    <p class="sangria">Buenos Aires, Argentina - Febrero de 2020 - Julio de 2022</p>
+                                    <div id="perfil_experiencia1" style="display: none;">
+                                        <a href="javascript:ocultar();" onclick="ocultar('perfil_experiencia1')"><span> ☒</span></a>
+                                        <p>Soporte microinformático y redes.
+                                            Extracción y procesamiento de bases de datos para la generación de informes de utilidad para diversos departamentos de la empresa.
+                                            Desarrollo de aplicaciones propias desarrolladas en C#.
+                                            Mantenimiento de servidores Windows Server y entorno Hyper-V.</p>
+                                      
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="items">Técnico de Soporte Informático a Usuarios, Grupo Oracle</p> 
+                                    <p class="sangria">Buenos Aires, Argentina - Junio de 2015 - Enero de 2020</p>
+                                    <div id="perfil_experiencia2" style="display: none;">
+                                        <a href="javascript:ocultarExperiencia();" onclick="ocultar('perfil_experiencia2')"><span> ☒</span></a>
+                                        <p > Soporte a usuario a través de chat, llamadas y videollamadas.
+                                            Recepción, registro y resolución de incidencias.
+                                            Investigación, documentación y escalada de incidentes a niveles superiores de apoyo para aquellos problemas que no podían resolverse con los recursos disponibles.
+                                            Asesoramiento a clientes sobre las actualizaciones más recomendadas en relación a sus necesidades.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>     
+                <p></p> 
+            </div>   
+                    
+            <div class="infoCompleta">                       
+                <div class="contenedorIndividual">
+                    <div class="iconoTitulo">
+                       <a> <img src="img/icon_idiomas.jpg" class= "icono" alt="icono idioma"><span></span></a>
+                       <h2>IDIOMAS</h2>
+                    </div>
+                    <div class="listaIdiomas">
+                        <div class="idiomasTipo">
+                            <ul>
+                                <li><p>CASTELLANO NATIVO</p><span><progress value= 100 max=100 class="nivel"></progress></span></li>
+                                <li><p>INGLES       </p><span><progress value= 75 max=100 class="nivel"></progress></span></li>
+                                <li><p>FRANCES      </p><span><progress value= 50 max=100 class="nivel"></progress></span></li>
+                                <li><p>PORTUGUES    </p><span><progress value= 25 max=100 class="nivel"></progress></span></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>     
+                <p></p>  
+            </div>                                  
+                
+            <div class="infoCompleta">                       
+                <div class="contenedorIndividual">
+                    <div class="iconoTitulo">
+                        <a> <img src="img/icon_referencias.jpg" class= "icono" alt="icono referencias"><span> </span></a>
+                        <h2>REFERENCIAS</h2>
+                    </div>
+                    <div class="listaReferencias">
+                        <div class="referenciasTipo">
+                            <div class="referente">
+                                <img src="img/icon_ticmas.jpg" class= "icono" alt="icono Ticmas">
+                                    <p>Grupo Ticmas</p>
+                                    <P>Buenos Aires, Argentina</P>
+                                    <P>Telefono: +54-011-1234567</P>
+                                    <a href="https://Ticmas.com">https://Ticmas.com</a>
+                            </div>
+                            <div class="referente">       
+                                <img src="img/icon_oracle.jpg" class= "icono" alt="icono Oracle">
+                                <p>Grupo Oracle</p>
+                                <P>Buenos Aires, Argentina</P>
+                                <P>Telefono: +54-011-7654321</P>
+                                <a href="https://oracle.com">https://Oracle.com</a>  
+                            </div>       
+                        </div>                                   
+                    </div>
+                </div>     
+                <p></p>  
+            </div>
+                
+            <div class="infoCompleta">
+                <div class="contenedorIndividual">
+                    <div class="iconoTitulo">
+                       <a> <img src="img/icon_disponibilidad.jpg" class= "icono" alt="icono disponibilidad"><span> </span></a>
+                        <h2>DISPONIBILIDAD</h2>
+                    </div>
+                    <div class="listaDisponibilidad">
+                        <ul>
+                            <li>DEDICACION FULL TIME</li>  
+                            <li>CARNET DE CONDUCIR</li>
+                            <li>MOVILIDAD PROPIA</li>                                    
+                        </ul>
+                    </div>
+                </div>   
+                <p></p> 
+            </div>                                                  
+                
+            <div class="infoCompleta">
+                <div class="contenedorIndividual">
+                    <div class="iconoTitulo">
+                       <a> <img src="img/icon_pretenciones.jpg" class= "icono" alt="icono pretenciones"><span> </span></a>
+                        <h2>PRETENCIONES</h2>
+                    </div>
+                    <div class="listaPretenciones">
+                        <ul>
+                            <li>PUESTO DE TRABAJO ESTABLE</li>  
+                            <li>JORNADAS DE TRABAJO FLEXIBLES</li>
+                            <li>POSIBILIDAD DE TRABAJO REMOTO</li> 
+                            <li>REMUNERACION ECONOMICA ACORDE A LA RESPONSABILIDAD DEL TRABAJO REALIZADO</li>                                
+                        </ul>                                                                  
+                    </div>                                                    
+                <p></p> 
+            </div>    
+        </div>       
+    </main>               
+    
+    <footer>
+        <div><img src="img/icon_direccion_stree.jpg" class= "icono" alt="icono direccion"><p>Soldado Ruíz 2055-Córdoba Capital-ARGENTINA</p></div>
+        <div><img src="img/icon_telefono.jpg" class= "icono" alt="icono telefono">+54 0351 156 321 654</div>
+        <div><img src="img/icon_email.jpg" class= "icono" alt="icono email">lucasisoto@gmail.com</div>
+        <div><img src="img/icon_linkedin.jpg" class= "icono" alt="icono linkedin">http://ca.linkedin.com/in/linkedinlucasisoto</div>
+        <div><img src="img/icon_facebook.jpg" class= "icono" alt="icono facebook">facebook.com/lucasisoto</div>
+        <div><img src="img/icon_instagram.jpg" class= "icono" alt="icono instagram">@lucasisoto</div>
+        <div><img src="img/icon_twitter.jpg" class= "icono" alt="icono twitter">@lucasisoto</div>
+        <div><img src="img/icon_gibhub.jpg" class= "icono" alt="icono github">  https://lucasisoto.github.io/porfolio</div> 
+    </footer>
+    
+</body>
+</html>
+                    
+                
+                
+                    
+                                                
+                    
+                
+                
+                    
+                                             
+                    
+                
+                
+             
+                                                 
+                    
+                
+                
+                                              
+                    
+                
+            
+        
+
+    
+    
+
+    
